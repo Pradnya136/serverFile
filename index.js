@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
 var cors = require("cors");
 var knex = require("knex");
+var port = process.env.PORT || 3001;
 
 const db = knex({
   client: "pg",
@@ -126,6 +127,6 @@ app.put("/image", (req, res) => {
 //   // res == false
 // });
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log("app is running");
 });
