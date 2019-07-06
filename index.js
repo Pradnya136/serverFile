@@ -26,7 +26,7 @@ app.use(bodyParser.json()); //middleware in order to use req.body we used this
 app.use(cors()); //middleware
 
 app.get("/", (req, res) => {
-  res.json(database.users);
+  res.json("its working");
   console.log("server is wrking on port 3001");
 });
 
