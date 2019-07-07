@@ -8,10 +8,8 @@ var port = process.env.PORT || 3001;
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-animate-77812",
-    user: "postgres",
-    password: "postSQL",
-    database: "smart_brain"
+    connectionString: process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
