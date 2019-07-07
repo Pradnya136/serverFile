@@ -2,9 +2,9 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "serverFile.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node serverFile.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
