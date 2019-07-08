@@ -70,7 +70,7 @@ app.post("/register", (req, res) => {
         hash: hash,
         email: email
       })
-      .into("login1")
+      .into("login")
       .returning("email")
       .then(loginEmail => {
         return trx("users")
